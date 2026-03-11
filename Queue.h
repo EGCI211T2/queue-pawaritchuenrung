@@ -22,9 +22,8 @@ if(new_node!=NULL){
     //2.(may be)change head when the queue is empty
     else 
     {
-        tailPtr->new_node;
-        headPtr->new_node;
-        
+        tailPtr=new_node;
+        headPtr=new_node;
     }
     //3. increase size
     size++;
@@ -38,7 +37,7 @@ int Queue::dequeue(){
     {
         NodePtr t=headPtr;
         headPtr = headPtr-> get_next();
-        if()tailPtr = NULL;//แก้นี้ด้วย อย่าลืมมม
+        if(headPtr==NULL)tailPtr = NULL;//แก้นี้ด้วย อย่าลืมมม
         --size;
         delete t;
     }
