@@ -1,5 +1,7 @@
 #ifndef node_h
 #define node_h
+#include <iostream>
+using namespace std;
 class NODE{
      int data;
     NODE *nextPtr;
@@ -34,7 +36,6 @@ void NODE::set_next(NODE *t){
 
 }
 NODE::~NODE(){
-     cout<<" "<<data<<endl;
 
 }
 
